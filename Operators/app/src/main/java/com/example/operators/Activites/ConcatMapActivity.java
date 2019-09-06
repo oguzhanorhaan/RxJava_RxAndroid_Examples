@@ -46,7 +46,6 @@ public class ConcatMapActivity extends AppCompatActivity {
 
                     @Override
                     public Observable<User> apply(User user) throws Exception {
-
                         // getting each user address by making another network call
                         return getAddressObservable(user);
                     }
@@ -94,7 +93,6 @@ public class ConcatMapActivity extends AppCompatActivity {
                     public void subscribe(ObservableEmitter<User> emitter) throws Exception {
                         if (!emitter.isDisposed()) {
                             user.setAddress(addresses[new Random().nextInt(2) + 0]);
-
 
                             // Generate network latency of random duration
                             int sleepTime = new Random().nextInt(1000) + 500;
