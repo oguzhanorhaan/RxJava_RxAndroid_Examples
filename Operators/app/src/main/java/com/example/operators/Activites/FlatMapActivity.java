@@ -29,10 +29,14 @@ public class FlatMapActivity extends AppCompatActivity {
     private Disposable disposable;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flat_map);
+        subscribe();
+    }
 
+    private void subscribe(){
         getUsersObservable()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -67,8 +71,6 @@ public class FlatMapActivity extends AppCompatActivity {
                         Log.e(TAG, "All users emitted!");
                     }
                 });
-
-
     }
 
     /**
