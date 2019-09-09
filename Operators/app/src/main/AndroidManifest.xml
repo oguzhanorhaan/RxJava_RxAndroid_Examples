@@ -11,16 +11,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Activites.MergeOperatorActivity">
+        <activity android:name=".Activites.FilterOperatorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activites.ConcatOperatorActivity">
+        <activity android:name=".Activites.MergeOperatorActivity">
         </activity>
-        <activity android:name=".Activites.SwitchMapOperatorActivity"></activity>
+        <activity android:name=".Activites.ConcatOperatorActivity"></activity>
+        <activity android:name=".Activites.SwitchMapOperatorActivity" />
         <activity android:name=".Activites.ConcatMapActivity" />
         <activity android:name=".Activites.FlatMapActivity" />
         <activity android:name=".MainActivity" />
