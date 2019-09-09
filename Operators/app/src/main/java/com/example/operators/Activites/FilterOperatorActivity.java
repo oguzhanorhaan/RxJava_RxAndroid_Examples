@@ -77,7 +77,6 @@ public class FilterOperatorActivity extends AppCompatActivity {
             User user = new User();
             user.setName(name);
             user.setGender("female");
-
             users.add(user);
         }
         return Observable
@@ -96,6 +95,4 @@ public class FilterOperatorActivity extends AppCompatActivity {
                     }
                 }).subscribeOn(Schedulers.io());
     }
-
-
 }
